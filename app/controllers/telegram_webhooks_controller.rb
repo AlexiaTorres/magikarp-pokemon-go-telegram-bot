@@ -23,6 +23,17 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
     end
   end
 
+  def start_coins(coins = nil, *)
+    if coins
+      @user = User.find(from['id'])
+      @user.coins = coins
+      @user.save
+    else
+      save_context :start_coins
+      respond_with :message, text: t('.content')
+    end
+  end
+
   # This will call #register like if it is called with message '/register %text%'
   # If you have a lot of such methods you can use
   context_to_action!
@@ -32,4 +43,5 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
     @user = User.new(username: name, id: user_id)
     @user.save
   end
+
 end
