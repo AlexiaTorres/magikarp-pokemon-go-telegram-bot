@@ -14,3 +14,11 @@ en:
       register_ok: Has sido registrado en mi estanque de datos, ahora ¿podrías usar el comando /start_coins para decirme cuántas monedas tienes?
     start_coins:
       content:  ¿Cuántas monedas tienes actualmente? Si no tienes ninguna pon "0"
+      start_coins: Tienes %{coins} monedas, a partir de ahora cada día podrás actualizarlas.
+                   Puedes consultar cuántas monedas tienes con el comando /my_coins
+    my_coins: 
+      my_coins: Tienes %{coins} monedas. Gástalas con inteligencia.
+    update_coins: 
+      update_coins: "Se han añadido %{coins} monedas.
+                    Recuerda: para consultar tus monedas usa /my_coins"
+      content: ¿Cuántas monedas has ganado hoy?
