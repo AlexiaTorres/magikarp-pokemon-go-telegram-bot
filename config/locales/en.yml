@@ -4,4 +4,13 @@ en:
       content: 'start!'
 
     register:
-      content: 'register!'
+      content:  Para registrarte es suficiente con que elijas un nombre con el que identificarte,
+                yo usaría mi nombre de usuario de pokémon go, para hacerlo todo más real,
+                pero por mi cómo si os llamáis magykarp todos (no se pueden repetir nombres),
+                pero gyarados no quiero ninguno, que me disgusto, por una vez quiero ser yo el molón
+      gyarados: No sabes lo que tienes hasta que lo pierdes...(o evolucionas). Inténtalo de nuevo
+      register_yet: Ya estás registrado
+      name_unavailable: Este nombre ya está en uso por otro usuario
+      register_ok: Has sido registrado en mi estanque de datos, ahora ¿podrías usar el comando /start_coins para decirme cuántas monedas tienes?
+    start_coins:
+      content:  ¿Cuántas monedas tienes actualmente? Si no tienes ninguna pon "0"
