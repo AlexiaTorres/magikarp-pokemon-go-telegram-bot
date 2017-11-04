@@ -8,6 +8,7 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
   def register(name = nil, *)
     if name
       if name.downcase == 'gyarados'
+        bot.send_photo(chat_id: chat['id'], photo: 'https://img00.deviantart.net/0c24/i/2011/090/b/b/magikarp_by_isa81-d3cw86v.png')
         respond_with :message, text: t('.gyarados')
       elsif User.where(id: chat["id"]).exists?
         respond_with :message, text: t('.register_yet')
@@ -15,7 +16,7 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
         respond_with :message, text: t('.name_unavailable')
       else
         add_user name, chat["id"]
-        respond_with :message, text: t('.register_ok')
+        respond_with :message, text: t('.register_ok', name: name)
       end
     else
       save_context :register
@@ -28,6 +29,7 @@ class TelegramWebhooksController < Telegram::Bot::UpdatesController
       @user = User.find(from['id'])
       @user.coins = coins
       @user.save
+      bot.send_photo(chat_id: chat['id'], photo: 'https://orig00.deviantart.net/ce29/f/2011/097/7/e/magikarp_for_collab_by_kayleigh29-d3dh6u8.png')
       respond_with :message, text: t('.start_coins', coins: coins)
     else
       save_context :start_coins

@@ -1,24 +1,50 @@
 en:
   telegram_webhooks:
     start:
-      content: 'start!'
+      content: "Kaaaarp! Como pokémon no tengo idea de la vida, pero con mis aletitas puedo ayudaros a hacer el recuento diario 
+               de monedas obtenidas en pokémon go.
+               
+
+               No es un proceso automático porque niantic no tiene api, he hecho lo que mis tentáculos programadores me han permitido.
+               Se trata de algo sólo visual, en telegram.
+               
+
+               Al final de cada día os enviaré un mensaje, y cada miembro del grupo podrá poner cuántas monedas ha ganado y 
+               luego por si queréis comparar os enviaré una lista con las monedas ganadas por cada jugador.
+               
+
+               Estas monedas se irán sumando a las anteriores. 
+               
+
+               Si has gastado monedas, también tendrás opción de actualizarlo.
+               
+
+               Si quieres registrarte en la lista para hacer seguimiento de tus monedas: 
+               
+
+               /register"
 
     register:
       content:  Para registrarte es suficiente con que elijas un nombre con el que identificarte,
-                yo usaría mi nombre de usuario de pokémon go, para hacerlo todo más real,
-                pero por mi cómo si os llamáis magykarp todos (no se pueden repetir nombres),
-                pero gyarados no quiero ninguno, que me disgusto, por una vez quiero ser yo el molón
+                yo usaría mi nombre de usuario de pokémon go, para hacerlo todo más real.
+
+
+                Gyarados no quiero ninguno, que me disgusto, por una vez quiero ser yo el molón.
+                Kaaaaarp!
       gyarados: No sabes lo que tienes hasta que lo pierdes...(o evolucionas). Inténtalo de nuevo
       register_yet: Ya estás registrado
       name_unavailable: Este nombre ya está en uso por otro usuario
-      register_ok: Has sido registrado en mi estanque de datos, ahora ¿podrías usar el comando /start_coins para decirme cuántas monedas tienes?
+      register_ok: Muy bien %{name}, has sido registrado en mi estanque de datos, ahora ¿podrías usar el comando /start_coins para decirme cuántas monedas tienes?
     start_coins:
       content:  ¿Cuántas monedas tienes actualmente? Si no tienes ninguna pon "0"
-      start_coins: Tienes %{coins} monedas, a partir de ahora cada día podrás actualizarlas.
-                   Puedes consultar cuántas monedas tienes con el comando /my_coins
+      start_coins: Actualmente tienes %{coins} monedas, a partir de ahora cada día podrás actualizarlas.
+
+
+                   Puedes consultar cuántas monedas tienes con el comando /my_coins ,estaré encantado de contarlas con mis aletitas matemáticas
     my_coins: 
       my_coins: Tienes %{coins} monedas. Gástalas con inteligencia.
     update_coins: 
       update_coins: "Se han añadido %{coins} monedas.
-                    Recuerda: para consultar tus monedas usa /my_coins"
+
+                     Recuerda: para consultar tus monedas usa /my_coins"
       content: ¿Cuántas monedas has ganado hoy?
