@@ -1,5 +1,9 @@
 # README
 
+This bot is used to keep track of your coins in pokemon go. Especially to be used in groups with more players. When you register add the number of coins you have in pokemon go, and, every day at 23:00 pm the bot will ask how many coins you have received in the day. These coins will be added to those we already had, and can be consulted whenever
+
+----------------------------------------------------------------------------------------------------------------------------
+
 ## Create your bot on telegram app
 Go to Telegram app and search BotFather and talk him.
 Use the /newbot command to create a new bot. BotFather will ask you for a name and username, then generate an authorization token for your new bot.
